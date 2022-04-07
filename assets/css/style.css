@@ -23,6 +23,7 @@ html {
     max-width: 1130px;
     width: 100%;
     margin: 0 auto;
+
 }
 
 .header{
@@ -30,12 +31,16 @@ html {
     height: 746px;
     margin: 0 auto;
 }
+.header hr{
+    background-color: #217BF4;
+    opacity: 0.5;
+}
 .header-nav{
     height: 90px;
     display: flex;
     align-items: center;
     text-align: center;
-    border-bottom: 0.5px solid #c8d5e6;
+    /* border-bottom: 0.5px solid #c8d5e6; */
 }
 .header-nav .nav-logo{
     display: flex;
@@ -455,22 +460,40 @@ html {
     opacity: 0.6;  
     margin-top: 38px;
 }
-.people .group .group-items{
-    padding: 20px;
-    display: flex;
-    justify-content: space-around;
-}
 
-.people .group .group-items button{
-    padding: 5px 0;
-    outline: none;
-    border: none;
-    background-color:transparent;
-}
-.people .group .group-items button:nth-child(3){
-
-}
-
-.people .group .group-items .active{
-    padding: 20 auto;
-}
+/* nav-bar */
+.icon-bar {
+    width:100%;
+    background-color: #bbd6f8;
+    overflow: auto;
+    width:fit-content;
+    margin: 35px auto;
+    border-radius: 14px;
+  }
+  .icon-items{
+      padding:8px;
+    display:flex;
+  }
+  .icon-bar a {
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 14px 50px;
+    transition: all 0.3s ease;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    border-radius: 14px;
+    z-index: 2;
+    color: var(--text-big)
+  }
+  
+  .icon-bar a:hover {
+    background-color: #217BF4;
+    border-radius: 14px;
+  }
+  
+  .active {
+    background-color: #217BF4;
+    color: white !important;
+  }
