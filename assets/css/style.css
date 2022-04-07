@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&family=Sora:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;600;800&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,6 +9,7 @@
 body,
 html {
     overflow-x: hidden;
+    background-color:#FFFFFF;
 }
 
 :root {
@@ -23,13 +24,6 @@ html {
     width: 100%;
     margin: 0 auto;
 }
-.col {
-    text-align: center;
-    /* background-color: #ccc; */
-    background-clip: content-box;
-    margin-top: 8px;
-    margin-bottom: 8px;
-  }
 
 .header{
     background: linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%);
@@ -166,8 +160,6 @@ html {
 } */
 .contentB img{
     object-fit: cover;
-    width: 585px;
-    height: 501px;
 }
 
 .network{
@@ -233,7 +225,6 @@ html {
 }
 
 .network .networkB{
- 
     display: flex;
     align-items: center;
 }
@@ -250,6 +241,179 @@ html {
 
 .rating{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 122px;
+}
+.ratingAB{
+    display: flex;
+    justify-content:space-between;
+}
+.ratingA{
+    border:1px solid #e2e2e2;
+    border-radius: 14px;
+    box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14);
+    width: 336px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+.ratingA:nth-child(1){
+    box-shadow: 0px 26px 49px rgba(146, 165, 184, 0.14)
+}
+.ratingA .ratingA-items{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: left;
+    height: 100%;
+    padding:50px;
+}
+.ratingA-items small{
+    color: var(--primary-color)
+}
+   
+.ratingA .ratingAa{
+    display:flex;
+}
+.ratingA .ratingAa p{
+    margin-left: 12px;
+    margin-top: 5px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.ratingA .ratingAb{
+    display:flex;
+    margin-top: 36px;
+}
+
+.ratingA .ratingAb img{
+    margin-left: -15px;
+}
+
+.ratingA .ratingAb p{
+    margin-left: 16px;
+    margin-top: 15px;
+}
+.ratingA .ratingA-items .strong{
+    color: var( --text-maill);
+    margin-top: 40px;
+}
+.ratingA-items .last{
+    margin-top: 40px;
+}
+
+.ratingC{
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.ratingC .ratingC-items{
+    display: flex;
+    justify-content: center;
+    align-items: flex;
+    flex-direction: column;
+    padding: 40px;
+}
+.ratingC .ratingC-items p:nth-child(1){
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+.ratingC .ratingC-items strong{
+    margin-top: 10px;
+    font-weight: 700;
+    font-size: 36px;
+    color: #0A093D;
+}
+.ratingC .ratingC-items p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-maill);
+    margin-top: 18px;
+}
+.ratingC .ratingC-items button{
+    margin-top: 38px;
+    width: 192px;
+    height: 58px;
+    border-radius: 14px;
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 10px 22px rgba(33, 123, 244, 0.26);
+}
+
+.commu{
+    padding: 60px 0 173px 0;
+    background: linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%);
+}
+.commuA{
+    display: flex;
+    flex-direction: column;
+    text-align:center;
+    margin-bottom: 64px; ;
+}
+.commuA .our{
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 18px;
+}
+.commuA strong{
+    margin: 9px 0 19px 0 !important;
+    color: var(--text-big);
+    font-weight: 700;
+    font-size: 36px;
+}
+.commuA p{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-maill)
+}
+
+
+.commuB{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 44px;
+}
+.commuBb{
+    display: flex;
+    background-color: white;
+    border-radius: 14px;
+    box-shadow: 14px 22px 52px -12px rgba(127, 127, 127, 0.13);
+    max-width: 50%;
+}
+.commuBb .commuBb-tiems{
+    display: flex;
+    padding: 30px;
+    height: 100%;
+}
+.commuBb .commuBb-tiems{
+    align-items: center;
+    justify-content: center
+}
+.commuBb .commuBb-tiems .commuBb-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+    margin-left: 10px;
+}
+
+.commuBb .commuBb-tiems .commuBb-text1{
+    font-weight: 600;
+    font-size: 24px;
+    height: 100%;
+}
+.commuBb .commuBb-tiems .commuBb-text2{
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--text-maill);
+    height: 100%;
+    flex-wrap: wrap;
 }
